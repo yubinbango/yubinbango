@@ -25,6 +25,7 @@
 ## YubinBangoライブラリを有効にするには
 
 YubinBangoが有効になる条件は下記の通りです。
+
 1. scriptタグでYubinBangoライブラリが読み込まれていること
 2. formタグのclass指定の中に h-adr が含まれていること
 3. form中で、国名(p-country-name) が Japan に指定されていること
