@@ -1,0 +1,3 @@
+[submodule "yubinbango-core"]
+	path = yubinbango-core
+	url = https://github.com/yubinbango/yubinbango-core.git
