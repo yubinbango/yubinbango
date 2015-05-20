@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../yubinbango.js" charset="UTF-8"></script>
+  </head>
+  <body>
+  <h1>YubinBango</h1>
+  <h2>郵便番号を3桁-4桁形式で入力される場合</h2>
+  <h3>住所欄をワンボックスにする場合</h3>
+
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="a1">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="3" maxlength="3">
+    <input type="text" class="p-postal-code" size="4" maxlength="4"><br>
+
+    <input type="text" class="p-region p-locality p-street-address p-extended-address" /><br>
+  </form>
+
+  <h3>都道府県 と 以降の住所 に分ける場合</h3>
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="a2">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="3" maxlength="3">
+    <input type="text" class="p-postal-code" size="4" maxlength="4"><br>
+
+    <input type="text" class="p-region" readonly /><br>
+    <input type="text" class="p-locality p-street-address p-extended-address" /><br>
+  </form>
+
+  <h3>都道府県 と 市町村区 と 以降の住所に分ける場合</h3>
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="a3">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="3" maxlength="3">
+    <input type="text" class="p-postal-code" size="4" maxlength="4"><br>
+
+    <input type="text" class="p-region" readonly /><br>
+    <input type="text" class="p-locality" readonly /><br>
+    <input type="text" class="p-street-address p-extended-address" />
+  </form>
+
+  <h3>都道府県 と 市町村区 と 町域 と 以降の住所に分ける場合</h3>
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="a4">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="3" maxlength="3">
+    <input type="text" class="p-postal-code" size="4" maxlength="4"><br>
+
+    <input type="text" class="p-region" readonly /><br>
+    <input type="text" class="p-locality" readonly /><br>
+    <input type="text" class="p-street-address" /><br>
+    <input type="text" class="p-extended-address" />
+  </form>
+
+  <h2>ワンボックスで郵便番号7桁を入力させる場合</h2>
+  <h3>住所欄をワンボックスにする場合</h3>
+
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="b1">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="8" maxlength="8"><br>
+
+    <input type="text" class="p-region p-locality p-street-address p-extended-address" /><br>
+  </form>
+
+  <h3>都道府県 と 以降の住所 に分ける場合</h3>
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="b2">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="8" maxlength="8"><br>
+
+    <input type="text" class="p-region" readonly /><br>
+    <input type="text" class="p-locality p-street-address p-extended-address" /><br>
+  </form>
+
+  <h3>都道府県 と 市町村区 と 以降の住所に分ける場合</h3>
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="b3">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="8" maxlength="8"><br>
+
+    <input type="text" class="p-region" readonly /><br>
+    <input type="text" class="p-locality" readonly /><br>
+    <input type="text" class="p-street-address p-extended-address" />
+  </form>
+
+  <h3>都道府県 と 市町村区 と 町域 と 以降の住所に分ける場合</h3>
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="b4">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="8" maxlength="8"><br>
+
+    <input type="text" class="p-region" readonly /><br>
+    <input type="text" class="p-locality" readonly /><br>
+    <input type="text" class="p-street-address" /><br>
+    <input type="text" class="p-extended-address" />
+  </form>
+
+  </body>
+</html>
