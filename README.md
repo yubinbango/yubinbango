@@ -44,13 +44,13 @@
 YubinBangoが有効になる条件は下記の通りとなります。
 
 0. scriptタグでYubinBangoライブラリが読み込まれていること  
-   例: \<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"\>\</script\>
+     例: \<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"\>\</script\>
 0. formタグのclass指定の中に h-adr が含まれていること  
-   例: \<form class="h-adr"\>
+     例: \<form class="h-adr"\>
 0. form中で、国名(p-country-name) が Japan に指定されていること  
-   例1: \<span class="p-country-name" style="display:none;"\>Japan\</span\>
-   例2: \<input type="hidden" class="p-country-name" value="Japan"\>
+     例1: \<span class="p-country-name" style="display:none;"\>Japan\</span\>  
+     例2: \<input type="hidden" class="p-country-name" value="Japan"\>
 0. 郵便番号入力欄のclass指定の中に p-postal-code が含まれていること  
-   例1: 〒\<input type="text" class="p-postal-code" size="8" maxlength="8"\>
-   例2: 〒\<input type="text" class="p-postal-code" size="3" maxlength="3"\>\<input type="text" class="p-postal-code" size="4" maxlength="4"\>
+     例1: 〒\<input type="text" class="p-postal-code" size="8" maxlength="8"\>  
+     例2: 〒\<input type="text" class="p-postal-code" size="3" maxlength="3"\>\<input type="text" class="p-postal-code" size="4" maxlength="4"\>
 0. 住所欄のclass指定の中に、都道府県名(p-region)、市町村区(p-locality)、町域(p-street-address)、以降の住所(p-extended-address) がそれぞれ含まれていること
