@@ -42,8 +42,11 @@
 
 YubinBangoが有効になる条件は下記の通りとなります。
 
-1. scriptタグでYubinBangoライブラリが読み込まれていること
-2. formタグのclass指定の中に h-adr が含まれていること
-3. form中で、国名(p-country-name) が Japan に指定されていること
-4. 郵便番号入力欄のclass指定の中に p-postal-code が含まれていること
-5. 住所欄のclass指定の中に、都道府県名(p-region)、市町村区(p-locality)、町域(p-street-address)、以降の住所(p-extended-address) がそれぞれ含まれていること
+0. scriptタグでYubinBangoライブラリが読み込まれていること  
+   <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+0. formタグのclass指定の中に h-adr が含まれていること  
+   <form class="h-adr">
+0. form中で、国名(p-country-name) が Japan に指定されていること  
+   <span class="p-country-name" style="display:none;">Japan</span>
+0. 郵便番号入力欄のclass指定の中に p-postal-code が含まれていること
+0. 住所欄のclass指定の中に、都道府県名(p-region)、市町村区(p-locality)、町域(p-street-address)、以降の住所(p-extended-address) がそれぞれ含まれていること
