@@ -1,6 +1,6 @@
 ## Yubinbangoについて
 
-これまでにない設定方法のまったく新しいライブラリが誕生いたしました！  
+これまでにない設定方法（なんとclassを指定するだけ！）のまったく新しいライブラリが誕生いたしました！  
 このYubinBangoライブラリの革新的な設定方法は今は特殊に感じるかも知れませんが、10年以内にこれが当たり前になっていることでしょう。
 
 ## 背景
@@ -11,7 +11,7 @@
 
 ## YubinBangoの設定方法
 
-今度の郵便番号検索ライブラリは、なんとclassを指定するだけ！
+今度の郵便番号検索ライブラリは、なんとclassを指定するだけ！  
 下記のように[microformats2](http://microformats.org/wiki/h-adr)の標準仕様に合わせたclassを記載をするだけで郵便番号検索機能が有効になります。
 
     <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
