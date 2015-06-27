@@ -123,5 +123,18 @@
     <input type="text" class="p-extended-address" />
   </form>
 
+  <h3>inputタグが深い階層にある場合</h3>
+  <!--href="http://microformats.org/wiki/h-adr"-->
+  <form class="h-adr" id="c1">
+    <!--href="https://www.iso.org/obp/ui/#iso:code:3166:JP"-->
+    <!--href="http://en.wikipedia.org/wiki/ISO_3166-1"-->
+    <span class="p-country-name" style="display:none;">Japan</span>
+
+    〒<input type="text" class="p-postal-code" size="3" maxlength="3">
+    <input type="text" class="p-postal-code" size="4" maxlength="4"><br>
+
+    <input type="text" class="p-region p-locality p-street-address p-extended-address" /><br>
+  </form>
+
   </body>
 </html>
