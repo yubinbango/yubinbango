@@ -1,6 +1,6 @@
 {
   "name": "yubinbango",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "yubinbango.js",
   "directories": {
@@ -20,11 +20,14 @@
   },
   "homepage": "https://github.com/yubinbango/yubinbango",
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-angular-protractor": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-angular-protractor": "^0.1.1",
     "gulp-exit": "0.0.2",
-    "gulp-webserver": "^0.9.0",
-    "run-sequence": "^1.1.0",
+    "gulp-webserver": "^0.9.1",
+    "run-sequence": "^1.2.1",
     "uglifyjs": "^2.4.10"
+  },
+  "dependencies": {
+    "yubinbango-core": "^0.6.0"
   }
 }
