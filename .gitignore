@@ -1,5 +1,4 @@
 .DS_Store
-tsconfig.json
 node_modules
 build.py
 yubinbango-src.js
