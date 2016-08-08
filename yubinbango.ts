@@ -1,7 +1,7 @@
 /// <reference path="./node_modules/yubinbango-core/yubinbango-core.ts"/>
 
 const ISO31661JP = ["Japan", "JP", "JPN", "JAPAN"];
-const HADRLIST = ["p-region", "p-locality", "p-street-address", "p-extended-address"];
+const HADRLIST = ["p-region-id", "p-region", "p-locality", "p-street-address", "p-extended-address"];
 module YubinBango {
   export class MicroformatDom {
     constructor(
@@ -54,6 +54,7 @@ module YubinBango {
     }
     postalFormSet(val: string, elm, data?) {
       const o = {
+        "p-region-id": data.region_id,
         "p-region": data.region,
         "p-locality": data.locality,
         "p-street-address": data.street,
