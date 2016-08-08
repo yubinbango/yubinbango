@@ -20,7 +20,7 @@ gulp.task('protractor', function(callback) {
     .pipe(gulpProtractorAngular({
       'configFile': 'test/protractor.conf.js',
       'args': ['--baseUrl', 'http://localhost:8888'],
-      'debug': true,
+      'debug': false,
       'autoStartStopServer': true
     }))
     .on('error', function(e) { console.log(e); })
