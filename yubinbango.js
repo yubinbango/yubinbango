@@ -4,8 +4,7 @@ var YubinBango;
 (function (YubinBango) {
     var MicroformatDom = (function () {
         function MicroformatDom() {
-            var _this = this;
-            document.addEventListener('DOMContentLoaded', function () { _this.hadrloop(); }, false);
+            this.hadrloop();
         }
         MicroformatDom.prototype.hadrloop = function () {
             var _this = this;
@@ -64,4 +63,6 @@ var YubinBango;
     }());
     YubinBango.MicroformatDom = MicroformatDom;
 })(YubinBango || (YubinBango = {}));
-new YubinBango.MicroformatDom();
+document.addEventListener('DOMContentLoaded', function () {
+    new YubinBango.MicroformatDom();
+}, false);

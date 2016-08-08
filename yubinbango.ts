@@ -6,7 +6,7 @@ module YubinBango {
   export class MicroformatDom {
     constructor(
       ) {
-      document.addEventListener('DOMContentLoaded', () => { this.hadrloop() }, false);
+      this.hadrloop();
     }
     hadrloop() {
       // HTML内のh-adr要素のリストに対して操作を行う
@@ -67,4 +67,6 @@ module YubinBango {
     }
   }
 }
-new YubinBango.MicroformatDom();
+document.addEventListener('DOMContentLoaded', () => {
+  new YubinBango.MicroformatDom();
+}, false);
