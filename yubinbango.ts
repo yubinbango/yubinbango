@@ -24,7 +24,7 @@ module YubinBango {
       });
     }
     getFormNode(elm){
-      return (elm.tagName !== "FORM")? this.getFormNode(elm.parentNode) : elm;
+      return (elm.tagName !== "FORM" && !elm.classList.contains("h-adr"))? this.getFormNode(elm.parentNode) : elm;
     }
     // 日本かどうかチェックする
     countryNameCheck(elm) {
