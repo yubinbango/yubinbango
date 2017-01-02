@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
 build.py
+reserve.json
 yubinbango-src.js
 yubinbango-src.js.map
