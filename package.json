@@ -20,12 +20,12 @@
   },
   "homepage": "https://github.com/yubinbango/yubinbango",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-angular-protractor": "^0.1.4",
-    "gulp-exit": "0.0.2",
-    "gulp-webserver": "^0.9.1",
-    "run-sequence": "^1.2.2",
-    "uglifyjs": "^2.4.10"
+    "gulp": "latest",
+    "gulp-angular-protractor": "latest",
+    "gulp-exit": "latest",
+    "gulp-webserver": "latest",
+    "run-sequence": "latest",
+    "uglifyjs": "latest"
   },
   "dependencies": {
     "yubinbango-core": "^0.6.3"

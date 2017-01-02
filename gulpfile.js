@@ -8,7 +8,7 @@ var exit = require('gulp-exit');
 
 gulp.task('webserver', function() {
   return gulp
-  .src('')
+  .src('./')
   .pipe(webserver({
     hot: 'localhost',
     port: 8888
