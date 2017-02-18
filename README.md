@@ -13,7 +13,7 @@
 
 今度の郵便番号検索ライブラリは、なんとclassを指定するだけ！  
 下記のように[microformats2](http://microformats.org/wiki/h-adr)の標準仕様に合わせたclassを記載をするだけで郵便番号検索機能が有効になります。
-
+```html
     <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
     <form class="h-adr">
       <span class="p-country-name" style="display:none;">Japan</span>
@@ -22,11 +22,11 @@
 
       <input type="text" class="p-region p-locality p-street-address p-extended-address" /><br>
     </form>
-
+```
 ## その他の設定方法
 
 住所欄を分ける場合は下記のようにします。
-
+```html
     <form class="h-adr">
       <span class="p-country-name" style="display:none;">Japan</span>
 
@@ -38,7 +38,7 @@
       <input type="text" class="p-street-address" /><br>
       <input type="text" class="p-extended-address" />
     </form>
-
+```
 ## YubinBangoライブラリを有効にするには？
 
 YubinBangoが有効になる条件は下記の通りとなります。
