@@ -7,7 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "compile": "yarn tsc yubinbango.ts --out yubinbango-src.js --removeComments --sourcemap",
+    "minify": "yarn uglifyjs yubinbango-src.js -o yubinbango.js --source-map url='yubinbango.js.map' -c -m reserved='sort,eval' --mangle-props --reserved-file reserve.json",
+    "build": "yarn run compile && yarn run minify"
   },
   "repository": {
     "type": "git",
@@ -24,10 +27,11 @@
     "gulp-angular-protractor": "latest",
     "gulp-exit": "latest",
     "gulp-webserver": "latest",
-    "run-sequence": "latest",
-    "uglifyjs": "latest"
+    "protractor": "latest",
+    "tsc": "latest",
+    "uglify-js": "latest"
   },
   "dependencies": {
-    "yubinbango-core": "^0.6.3"
+    "yarn": "^1.21.1"
   }
 }

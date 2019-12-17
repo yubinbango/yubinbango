@@ -1,0 +1,12 @@
+{
+  "vars": ["define", "require"],
+  "props": [
+    "length",
+    "prototype",
+    "value",
+    "p-region",
+    "p-locality",
+    "p-street-address",
+    "p-extended-address"
+  ]
+}
