@@ -17,7 +17,7 @@ module YubinBango {
           // 郵便番号の入力欄を取得
           const postalcode = hadr.querySelectorAll('.p-postal-code');
           // 郵便番号入力欄が1つの場合でも3桁-4桁で2つに分かれている場合でも両方に対応するため、それぞれのh-adr内の中の最後のpostal-codeにkeyupイベントを付与する
-          postalcode[postalcode.length - 1].addEventListener("keyup", (e)=>{
+          postalcode[postalcode.length - 1].addEventListener("input", (e)=>{
             MicroformatDom.prototype.applyDom(this.getFormNode(e.target.parentNode));
           }, false);
         }
